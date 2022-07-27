@@ -18,7 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.transform.tag == "Enemy") {
-            Debug.Log("Entered collision");
+            GameManager.IsGameOver = true;
+            gameObject.SetActive(false);
         }
     }
 }
