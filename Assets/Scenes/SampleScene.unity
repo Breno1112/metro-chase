@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.23950672, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starting_level_part: {fileID: 1440591426}
   levelPart1: {fileID: 4886294401670058869, guid: a43c729693afc40e9bf70ae6035f09cd, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 284680261}
 --- !u!4 &1475041693
 Transform:
   m_ObjectHideFlags: 0

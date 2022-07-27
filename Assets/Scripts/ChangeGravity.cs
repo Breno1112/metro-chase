@@ -25,7 +25,6 @@ public class ChangeGravity : MonoBehaviour
         if (!canSwitch && touchingGround) {
             canSwitch = true;
         }
-        Debug.Log(touchingGround);
         if (Input.touches.Length == 1 && Input.GetTouch(0).phase == TouchPhase.Began && canSwitch) {
             rb.gravityScale *= -1;
             canSwitch = false;

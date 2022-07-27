@@ -14,4 +14,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate() {
         rb.velocity = new Vector2(velocity, 0);
     }
+
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.transform.tag == "Enemy") {
+            Debug.Log("Entered collision");
+        }
+    }
 }
