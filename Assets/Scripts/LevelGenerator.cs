@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    [SerializeField] private Transform starting_level_part;
     [SerializeField] private Transform levelPart1;
     // Start is called before the first frame update
     private void Awake() {
-        SpawnLevelPart(new Vector3(21, 0));
-        SpawnLevelPart(new Vector3(21 + 18, 0));
-        SpawnLevelPart(new Vector3(21 + 36, 0));
+        Transform lastLevelTransform = SpawnLevelPart(starting_level_part.Find("EndPosition").position);
+        lastLevelTransform = SpawnLevelPart(lastLevelTransform.Find("EndPosition").position);
+        lastLevelTransform = SpawnLevelPart(lastLevelTransform.Find("EndPosition").position);
+        lastLevelTransform = SpawnLevelPart(lastLevelTransform.Find("EndPosition").position);
+        lastLevelTransform = SpawnLevelPart(lastLevelTransform.Find("EndPosition").position);
     }
 
-    private void SpawnLevelPart(Vector3 spawnPosition) {
-        Instantiate(levelPart1, spawnPosition, Quaternion.identity);
+    private Transform SpawnLevelPart(Vector3 spawnPosition) {
+        return Instantiate(levelPart1, new Vector3(spawnPosition.x + 10.75f, 0), Quaternion.identity);
     }
 }
