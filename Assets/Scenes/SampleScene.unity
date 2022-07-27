@@ -594,6 +594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starting_level_part: {fileID: 1440591426}
   levelPart1: {fileID: 4886294401670058869, guid: a43c729693afc40e9bf70ae6035f09cd, type: 3}
+  player: {fileID: 0}
 --- !u!4 &1475041693
 Transform:
   m_ObjectHideFlags: 0
