@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4955546864368283474}
   m_Layer: 3
   m_Name: UpPlatform
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4886294401446522234}
   m_Layer: 3
   m_Name: DownPlatform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

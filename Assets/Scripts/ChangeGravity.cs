@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ChangeGravity : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private bool touchingGround;
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundDetection;
+    private Rigidbody2D rb;
+    private bool touchingGround;
     private bool canSwitch;
 
     // Start is called before the first frame update
